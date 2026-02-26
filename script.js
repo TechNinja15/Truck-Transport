@@ -3,7 +3,6 @@
 // ============================
 document.addEventListener('DOMContentLoaded', () => {
     initNavbar();
-    initHamburger();
     initCountUp();
     initAOS();
     initForms();
@@ -36,29 +35,6 @@ function initNavbar() {
             });
             ticking = true;
         }
-    });
-}
-
-// ============================
-// Mobile hamburger menu
-// ============================
-function initHamburger() {
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('navLinks');
-
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
-        navLinks.classList.toggle('active');
-        document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
-    });
-
-    // Close menu on link click
-    navLinks.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-            hamburger.classList.remove('active');
-            navLinks.classList.remove('active');
-            document.body.style.overflow = '';
-        });
     });
 }
 
