@@ -1708,45 +1708,21 @@ button {
     }
 
     /* ---- Nav ---- */
-    .nav-links,
     .nav-actions {
-        display: none;
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
     }
 
-    .mobile-actions {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        width: 100%;
-        max-width: 280px;
-        margin-top: 10px;
+    .btn-outline-nav,
+    .btn-primary-nav {
+        padding: 6px 14px;
+        font-size: 0.7rem;
     }
 
     .hamburger {
-        display: flex;
-    }
-
-    .nav-links.active {
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: #0a0a0f;
-        backdrop-filter: blur(20px);
-        align-items: center;
-        justify-content: flex-start;
-        padding: 100px 24px 40px;
-        gap: 24px;
-        z-index: 10001;
-        overflow-y: auto;
-    }
-
-    .nav-links.active a {
-        font-size: 1.4rem;
-        color: var(--text-primary);
+        display: none;
     }
 
     .navbar.scrolled {
