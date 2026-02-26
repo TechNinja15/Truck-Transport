@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TruckHaul — Book Trucks for Transport | Agency Registration</title>
+    <meta name="description"
+        content="TruckHaul connects you with verified truck agencies for seamless freight transport. Book a truck in minutes or register your agency to grow your business.">
+    <link rel="icon" href="assets/hero.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- ===================== LOADER ===================== -->
+    <div class="loader-wrapper" id="pageLoader">
+        <div class="truck-wrapper">
+            <div class="truck">
+                <div class="truck-container"></div>
+                <div class="glases"></div>
+                <div class="bonet"></div>
+                <div class="base"></div>
+                <div class="base-aux"></div>
+                <div class="wheel-back"></div>
+                <div class="wheel-front"></div>
+                <div class="smoke"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="1" y="3" width="15" height="13"></rect>
+                        <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                        <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                        <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                    </svg>
+                </div>
+                <span class="logo-text">TruckHaul</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li class="mobile-actions">
+                    <a href="register.html" class="btn btn-outline-nav">Register Agency</a>
+                    <a href="book.html" class="btn btn-primary-nav">Book a Truck</a>
+                </li>
+            </ul>
+            <div class="nav-actions">
+                <a href="register.html" class="btn btn-outline-nav">Register Agency</a>
+                <a href="book.html" class="btn btn-primary-nav">Book a Truck</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <img src="assets/hero.png" alt="Fleet of trucks on highway" class="hero-bg-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container hero-content">
+
+            <h1 class="hero-title">Move Your Freight<br><span class="gradient-text">Faster & Smarter</span></h1>
+            <p class="hero-subtitle">Connect with verified truck agencies for reliable, on-time transport. Book in
+                minutes. Track in real-time. Deliver with confidence.</p>
+            <div class="hero-cta">
+                <a href="book.html" class="btn btn-primary btn-lg">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path>
+                    </svg>
+                    Book a Truck
+                </a>
+                <a href="register.html" class="btn btn-glass btn-lg">
+                    Register Your Agency
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-value"><span class="stat-number" data-target="5000">0</span><span
+                            class="stat-suffix">+</span></div>
+                    <span class="stat-label">Trucks Available</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <div class="stat-value"><span class="stat-number" data-target="1200">0</span><span
+                            class="stat-suffix">+</span></div>
+                    <span class="stat-label">Verified Agencies</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <div class="stat-value"><span class="stat-number" data-target="50000">0</span><span
+                            class="stat-suffix">+</span></div>
+                    <span class="stat-label">Deliveries Done</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ===================== FEATURES GRID ===================== -->
+    <section class="features" id="features" style="padding: 100px 0; background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Explore</span>
+                <h2 class="section-title">Powerful <span class="gradient-text">Features</span></h2>
+                <p class="section-desc">Designed to make logistics smarter, faster, and more reliable for everyone.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon icon-blue">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.3-4.3"></path>
+                        </svg>
+                    </div>
+                    <h3>Instant Search & Match</h3>
+                    <p>Find the perfect truck for your cargo within seconds. Our smart matching connects you with the
+                        best available trucks.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon icon-green">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <h3>Real-Time GPS Tracking</h3>
+                    <p>Track your shipment in real-time from pickup to delivery. Get instant updates and ETA
+                        notifications.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon icon-purple">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22V8"></path>
+                            <path d="m5 12 7-7 7 7"></path>
+                            <rect x="2" y="2" width="20" height="4" rx="1"></rect>
+                        </svg>
+                    </div>
+                    <h3>Verified Agencies</h3>
+                    <p>All agencies on our platform are verified and rated. Book with confidence knowing your cargo is
+                        in safe hands.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon icon-orange">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+                            <line x1="2" y1="10" x2="22" y2="10"></line>
+                        </svg>
+                    </div>
+                    <h3>Secure Payments</h3>
+                    <p>Multiple payment options with full encryption. Pay online or on delivery — your money is always
+                        secure.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon icon-teal">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3>Dedicated Support</h3>
+                    <p>24/7 customer support for both agencies and users. Get help anytime through chat, call, or email.
+                    </p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon icon-rose">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                        </svg>
+                    </div>
+                    <h3>Digital Documentation</h3>
+                    <p>E-way bills, invoices, and transport receipts — all digital. No paperwork, no hassle, complete
+                        transparency.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== HOW IT WORKS CONTENT ===================== -->
+    <section class="how-it-works" id="how-it-works" style="padding: 100px 0; background: var(--bg-primary);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Guide</span>
+                <h2 class="section-title">How <span class="gradient-text">It Works</span></h2>
+                <p class="section-desc">Experience a smooth and effortless truck booking process designed for your
+                    convenience.</p>
+            </div>
+            <div class="steps-container">
+                <div class="step" data-aos="fade-right">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Enter Your Route</h3>
+                        <p>Tell us where you want to ship — pickup & drop location, date, and cargo type. Our system
+                            finds the best matches instantly.</p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="step-icon-wrap">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z">
+                                </path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-connector">
+                    <div class="connector-line"></div>
+                    <div class="connector-dot"></div>
+                </div>
+                <div class="step" data-aos="fade-left">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Choose Your Truck</h3>
+                        <p>Compare trucks by price, capacity, rating, and availability. Pick the one that fits your
+                            budget and timeline perfectly.</p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="step-icon-wrap">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="1" y="3" width="15" height="13"></rect>
+                                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-connector">
+                    <div class="connector-line"></div>
+                    <div class="connector-dot"></div>
+                </div>
+                <div class="step" data-aos="fade-right">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Confirm & Track</h3>
+                        <p>Confirm your booking and track your shipment in real-time. Get notified at every milestone
+                            from pickup to delivery.</p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="step-icon-wrap">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== REVIEWS CONTENT ===================== -->
+    <section class="reviews" id="reviews" style="padding: 100px 0; background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Our <span class="gradient-text">Users Say</span></h2>
+                <p class="section-desc">Don't just take our word for it. Hear from the businesses and agencies that rely
+                    on
+                    TruckHaul every day.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"TruckHaul saved us hours of phone calls. We now book trucks in 5
+                        minutes instead of 5 hours. The tracking feature gives our clients peace of mind."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background: linear-gradient(135deg, #667eea, #764ba2);">RS
+                        </div>
+                        <div>
+                            <strong>Rajesh Sharma</strong>
+                            <span>Supply Chain Manager, BrightStar Exports</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card featured" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Since joining TruckHaul, our fleet utilization went from 60% to 95%.
+                        The platform brings us more bookings than we can handle. Absolutely game-changing!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background: linear-gradient(135deg, #f093fb, #f5576c);">PP
+                        </div>
+                        <div>
+                            <strong>Priya Patel</strong>
+                            <span>Owner, Patel Logistics Pvt Ltd</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Transparent pricing, verified agencies, and real-time tracking.
+                        TruckHaul has set the standard for what truck booking should be like in India."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">AK
+                        </div>
+                        <div>
+                            <strong>Amit Kumar</strong>
+                            <span>Operations Head, GreenLeaf Industries</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== HUB OVERVIEW ===================== -->
+    <section class="services-overview" style="padding: 100px 0; background: var(--bg-primary);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Access Portals</span>
+                <h2 class="section-title">Ready to <span class="gradient-text">Get Started?</span></h2>
+                <p class="section-desc">Quick access to our specialized booking and registration portals.</p>
+            </div>
+            <div class="features-grid">
+                <a href="book.html" class="feature-card" style="text-decoration: none; color: inherit;">
+                    <div class="feature-icon icon-purple">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="1" y="3" width="15" height="13"></rect>
+                            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                        </svg>
+                    </div>
+                    <h3>Book a Truck</h3>
+                    <p>Enter your route details and book the best truck for your needs.</p>
+                    <span
+                        style="color: var(--primary); font-weight: 600; margin-top: 15px; display: inline-block;">Start
+                        Booking →</span>
+                </a>
+                <a href="register.html" class="feature-card" style="text-decoration: none; color: inherit;">
+                    <div class="feature-icon icon-orange">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <h3>Agency Portal</h3>
+                    <p>Register your fleet and start receiving high-quality booking leads.</p>
+                    <span
+                        style="color: var(--primary); font-weight: 600; margin-top: 15px; display: inline-block;">Register
+                        Agency →</span>
+                </a>
+                <div class="feature-card" style="background: var(--primary); color: white;">
+                    <h3>24/7 Support</h3>
+                    <p style="color: rgba(255,255,255,0.8);">Need help? Our logistics experts are always available to
+                        assist you.</p>
+                    <a href="tel:+911234567890"
+                        style="color: white; font-weight: 800; font-size: 1.2rem; margin-top: 15px; display: inline-block; text-decoration: none;">Call
+                        +91 0000 0000</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="1" y="3" width="15" height="13"></rect>
+                                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                            </svg>
+                        </div>
+                        <span class="logo-text">TruckHaul</span>
+                    </a>
+                    <p class="footer-tagline">India's most trusted truck transport platform. Connecting businesses with
+                        verified agencies since 2024.</p>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="register.html">Register Agency</a></li>
+                        <li><a href="book.html">Book Now</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 TruckHaul. All rights reserved.</p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Twitter">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
