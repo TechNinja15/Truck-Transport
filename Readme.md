@@ -1,0 +1,1 @@
+This is a platform where a user can connect with the truck agency's and then they can use the transport facility of the goods
